@@ -31,7 +31,7 @@ namespace GA_JuanHernandez_List
             studentList.Add("Jacky");
 
             DisplayStudents();
-        }
+        }//MainWindow
         public void DisplayStudents()
         {
             rtbDisplay.Text = "";//clears rtb
@@ -40,6 +40,13 @@ namespace GA_JuanHernandez_List
                 rtbDisplay.Text += $"{i} - {studentList[i]}\n";
             }
             lblCurrentCount.Content = $"Student Count: {studentList.Count}";
-        }
+        }//DisplayStudents
+
+        private void btnAddStudent_Click(object sender, RoutedEventArgs e)
+        {
+            studentList.Add(txtStudentName.Text);//adds new student
+            DisplayStudents() ; 
+
+        }//button addStudent click event
     }//MainWindow   
 }//namespace

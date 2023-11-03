@@ -14,7 +14,10 @@
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Label x:Name="lblCurrentCount" Content="Student Count:" Canvas.Left="225" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="95"/>
+        <Label x:Name="lblCurrentCount" Content="Student Count:" Canvas.Left="225" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="154"/>
+        <Label Content="Student Name:" Canvas.Left="225" Canvas.Top="249"/>
+        <TextBox x:Name="txtStudentName" Canvas.Left="319" TextWrapping="Wrap" Canvas.Top="253" Width="120"/>
+        <Button x:Name="btnAddStudent" Content="Add Student" Canvas.Left="456" Canvas.Top="252" HorizontalAlignment="Left" VerticalAlignment="Center" Width="79" Click="btnAddStudent_Click"/>
 
     </Canvas>
 </Window>

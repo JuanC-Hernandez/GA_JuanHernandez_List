@@ -21,6 +21,7 @@
         <Label Content="Enter an index: " Canvas.Left="225" Canvas.Top="280" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <TextBox x:Name="txtIndex" Canvas.Left="319" TextWrapping="Wrap" Canvas.Top="284" Width="120"/>
         <Button x:Name="btnDisplayStudent" Content="Display Student Name" Canvas.Left="456" Canvas.Top="284" HorizontalAlignment="Left" VerticalAlignment="Center" Width="134" Click="btnDisplayStudent_Click"/>
+        <Button x:Name="btnRemoveByIndex" Content="Remove by Index" Canvas.Left="595" Canvas.Top="284" HorizontalAlignment="Left" VerticalAlignment="Center" Width="114" Click="btnRemoveByIndex_Click"/>
 
     </Canvas>
 </Window>

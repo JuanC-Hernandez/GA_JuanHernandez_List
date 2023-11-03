@@ -62,5 +62,21 @@ namespace GA_JuanHernandez_List
                 MessageBox.Show("Invalid index");
             }
         }//button Display Student click event
+
+        private void btnRemoveByIndex_Click(object sender, RoutedEventArgs e)
+        {
+            int index = -1;
+            bool isANumber = int.TryParse(txtIndex.Text, out index);
+
+            if (isANumber && index >= 0 && index < studentList.Count)
+            {
+                studentList.RemoveAt(index);
+                DisplayStudents();
+            }
+            else
+            {
+                MessageBox.Show("Invalid index");
+            }
+        }//button remove Student click event
     }//MainWindow   
 }//namespace

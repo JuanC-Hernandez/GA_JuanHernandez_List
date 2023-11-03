@@ -23,6 +23,7 @@
         <Button x:Name="btnDisplayStudent" Content="Display Student Name" Canvas.Left="456" Canvas.Top="284" HorizontalAlignment="Left" VerticalAlignment="Center" Width="134" Click="btnDisplayStudent_Click"/>
         <Button x:Name="btnRemoveByIndex" Content="Remove by Index" Canvas.Left="595" Canvas.Top="284" HorizontalAlignment="Left" VerticalAlignment="Center" Width="114" Click="btnRemoveByIndex_Click"/>
         <Button Content="Add Student At Index" Canvas.Left="225" Canvas.Top="311" HorizontalAlignment="Center" VerticalAlignment="Center" Width="214" Click="Button_Click"/>
+        <Button x:Name="btnClear" Content="Clear" Canvas.Left="456" Canvas.Top="311" HorizontalAlignment="Left" VerticalAlignment="Center" Width="67" Background="#FFFFA8A8" Click="btnClear_Click"/>
 
     </Canvas>
 </Window>

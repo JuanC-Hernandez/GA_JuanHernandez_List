@@ -95,5 +95,12 @@ namespace GA_JuanHernandez_List
             }
 
         }//button add at index Student click event
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            studentList.Clear();
+            DisplayStudents();
+
+        }//Clear button
     }//MainWindow   
 }//namespace

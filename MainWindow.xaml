@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
+        <RichTextBox Height="190" Width="350" Canvas.Left="225" Canvas.Top="54" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="" Name="rtbDisplay"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name="lblCurrentCount" Content="Student Count:" Canvas.Left="225" Canvas.Top="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="95"/>
 
     </Canvas>
 </Window>

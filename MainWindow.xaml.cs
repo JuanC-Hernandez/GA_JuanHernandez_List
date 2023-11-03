@@ -20,9 +20,26 @@ namespace GA_JuanHernandez_List
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<string> studentList = new List<string>();//creating new list
         public MainWindow()
         {
             InitializeComponent();
+            studentList.Add("Juan");
+            studentList.Add("Carlos");
+            studentList.Add("Miguel");
+            studentList.Add("Helen");
+            studentList.Add("Jacky");
+
+            DisplayStudents();
         }
-    }
-}
+        public void DisplayStudents()
+        {
+            rtbDisplay.Text = "";//clears rtb
+            for (int i = 0; i < studentList.Count; i++)
+            {
+                rtbDisplay.Text += $"{i} - {studentList[i]}\n";
+            }
+            lblCurrentCount.Content = $"Student Count: {studentList.Count}";
+        }
+    }//MainWindow   
+}//namespace
